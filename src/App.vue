@@ -1,5 +1,6 @@
 <script setup>
   let message = 'Hello World';
+  const link = 'https://google.com';
   const upperCase = () =>{
     message = message.toUpperCase();
   };
@@ -11,6 +12,9 @@
 <template>
   <h1>Vue 3 入門</h1>
   <div v-text="message"></div>
+  <div>
+    <a v-bind:href="link">Google</a>
+  </div>
 </template>
 
 <style scoped>
